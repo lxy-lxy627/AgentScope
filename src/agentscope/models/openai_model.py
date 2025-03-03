@@ -733,3 +733,5 @@ class OpenAIEmbeddingWrapper(OpenAIWrapperBase):
             embedding=[_["embedding"] for _ in response_json["data"]],
             raw=response_json,
         )
+self.api_key = api_key
+self.client_args = client_args or {}
